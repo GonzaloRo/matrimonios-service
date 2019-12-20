@@ -8,10 +8,12 @@ class matrimonio {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column(name = "nombreEsposo")
+    @Column(name = "nombre_esposo")
     private String nombreEsposo;
-    @Column(name = "nombreEsposa")
+    @Column(name = "nombre_esposa")
     private String nombreEsposa;
+    @Column(name = "id_persona")
+    private String idPersona;
 
     public matrimonio() {
 
