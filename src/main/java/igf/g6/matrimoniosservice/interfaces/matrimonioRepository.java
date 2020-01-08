@@ -6,6 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
 public interface matrimonioRepository extends CrudRepository<matrimonio, Long> {
-
+    public matrimonio findByIdEsposo(long id);
+    public matrimonio findByIdEsposa(long id);
 }
 

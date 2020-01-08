@@ -38,4 +38,15 @@ public class matrimonioController {
         matrimonioService.deleteMatrimonio(id);
     }
 
+    @RequestMapping("/matrimonios/esposo/{id}")
+    public matrimonio getMatrimonioByIdEsposo(@PathVariable String id){
+        return matrimonioService.getByIdEsposo(id);
+    }
+
+    @RequestMapping("/matrimonios/esposa/{id}")
+    public matrimonio getMatrimonioByIdEsposa(@PathVariable String id){
+        return matrimonioService.getByIdEsposa(id);
+    }
+
+
 }

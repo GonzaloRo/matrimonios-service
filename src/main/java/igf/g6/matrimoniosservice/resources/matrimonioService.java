@@ -34,4 +34,13 @@ public class matrimonioService {
         matrimonioRepository.deleteById(Long.parseLong(id));
     }
 
+    public matrimonio getByIdEsposo(String id){
+        return matrimonioRepository.findByIdEsposo(Long.parseLong(id));
+    }
+
+    public matrimonio getByIdEsposa(String id){
+        return matrimonioRepository.findByIdEsposa(Long.parseLong(id));
+    }
+
+
 }
