@@ -42,5 +42,24 @@ public class matrimonioService {
         return matrimonioRepository.findByIdEsposa(Long.parseLong(id));
     }
 
+    public List<matrimonio> getMatrimonioNombre(String primer_nombre, String segundo_nombre,
+                                                String primer_apellido, String segundo_apellido){
+        List<matrimonio> matrimonios = new ArrayList<>();
+        matrimonioRepository.findAll().forEach(matrimonios::add);
+        List<matrimonio> matrimonioEncontrado = new ArrayList<>();
 
+        for (int i=0; i<matrimonios.size(); i++){
+            if( (primer_nombre.equals(matrimonios.get(i).getNombre1Esposa()) ||
+                    primer_nombre.equals(matrimonios.get(i).getNombre1Esposo())
+                    && segundo_nombre.equals(matrimonios.get(i).getNombre2Esposa()) ||
+                    segundo_nombre.equals(matrimonios.get(i).getNombre1Esposo()) &&
+                            primer_apellido.equals(matrimonios.get(i).getApellido1Esposa()) ||
+                    primer_apellido.equals(matrimonios.get(i).getApellido1Esposo()) &&
+                            segundo_apellido.equals(matrimonios.get(i).getApellido2Esposa()) ||
+                    segundo_apellido.equals(matrimonios.get(i).getApellido2Esposo()))){
+                matrimonioEncontrado.add(matrimonios.get(i));
+            }
+        }
+        return matrimonioEncontrado;
+    }
 }

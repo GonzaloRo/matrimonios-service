@@ -37,6 +37,10 @@ public class matrimonio {
     private int libro;
     @Column(name = "departamento")
     private String departamento;
+    @Column(name = "vigente")
+    private Boolean vigente;
+    @Column(name = "apellido_casada")
+    private String apellido_casada;
 
 
     public matrimonio() {
@@ -47,7 +51,7 @@ public class matrimonio {
                       String nombre2Esposo, String apellido1Esposo,
                       String apellido2Esposo, String departamento,
                       Date fecha, long id_esposa, int libro, int folio,
-                      long id_esposo) {
+                      long id_esposo, Boolean vigente, String apellido_casada) {
         this.nombre1Esposo = nombre1Esposo;
         this.nombre2Esposo = nombre2Esposo;
         this.apellido1Esposo = apellido1Esposo;
@@ -62,6 +66,8 @@ public class matrimonio {
         this.libro = libro;
         this.folio = folio;
         this.departamento = departamento;
+        this.vigente = vigente;
+        this.apellido_casada = apellido_casada;
     }
 
     public long getId() {
@@ -72,6 +78,70 @@ public class matrimonio {
         this.id = id;
     }
 
+    public String getNombre1Esposo() {
+        return nombre1Esposo;
+    }
+
+    public void setNombre1Esposo(String nombre1Esposo) {
+        this.nombre1Esposo = nombre1Esposo;
+    }
+
+    public String getNombre2Esposo() {
+        return nombre2Esposo;
+    }
+
+    public void setNombre2Esposo(String nombre2Esposo) {
+        this.nombre2Esposo = nombre2Esposo;
+    }
+
+    public String getApellido1Esposo() {
+        return apellido1Esposo;
+    }
+
+    public void setApellido1Esposo(String apellido1Esposo) {
+        this.apellido1Esposo = apellido1Esposo;
+    }
+
+    public String getApellido2Esposo() {
+        return apellido2Esposo;
+    }
+
+    public void setApellido2Esposo(String apellido2Esposo) {
+        this.apellido2Esposo = apellido2Esposo;
+    }
+
+    public String getNombre1Esposa() {
+        return nombre1Esposa;
+    }
+
+    public void setNombre1Esposa(String nombre1Esposa) {
+        this.nombre1Esposa = nombre1Esposa;
+    }
+
+    public String getNombre2Esposa() {
+        return nombre2Esposa;
+    }
+
+    public void setNombre2Esposa(String nombre2Esposa) {
+        this.nombre2Esposa = nombre2Esposa;
+    }
+
+    public String getApellido1Esposa() {
+        return apellido1Esposa;
+    }
+
+    public void setApellido1Esposa(String apellido1Esposa) {
+        this.apellido1Esposa = apellido1Esposa;
+    }
+
+    public String getApellido2Esposa() {
+        return apellido2Esposa;
+    }
+
+    public void setApellido2Esposa(String apellido2Esposa) {
+        this.apellido2Esposa = apellido2Esposa;
+    }
+
     public Date getFecha() {
         return fecha;
     }
@@ -80,20 +150,20 @@ public class matrimonio {
         this.fecha = fecha;
     }
 
-    public long getId_esposo() {
+    public long getIdEsposo() {
         return idEsposo;
     }
 
-    public void setId_esposo(long id_esposo) {
-        this.idEsposo = id_esposo;
+    public void setIdEsposo(long idEsposo) {
+        this.idEsposo = idEsposo;
     }
 
-    public long getId_esposa() {
+    public long getIdEsposa() {
         return idEsposa;
     }
 
-    public void setId_esposa(long id_esposa) {
-        this.idEsposa = id_esposa;
+    public void setIdEsposa(long idEsposa) {
+        this.idEsposa = idEsposa;
     }
 
     public int getFolio() {
@@ -118,6 +188,22 @@ public class matrimonio {
 
     public void setDepartamento(String departamento) {
         this.departamento = departamento;
+    }
+
+    public Boolean getVigente() {
+        return vigente;
+    }
+
+    public void setVigente(Boolean vigente) {
+        this.vigente = vigente;
+    }
+
+    public String getApellido_casada() {
+        return apellido_casada;
+    }
+
+    public void setApellido_casada(String apellido_casada) {
+        this.apellido_casada = apellido_casada;
     }
 }
 
