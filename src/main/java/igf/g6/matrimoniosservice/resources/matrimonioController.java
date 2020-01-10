@@ -55,4 +55,13 @@ public class matrimonioController {
         return matrimonioService.getMatrimonioNombre(primer_nombre, segundo_nombre, primer_apellido, segundo_apellido);
     }
 
+    @RequestMapping("matrimonios/{nombre1Esposo}/{nombre2Esposo}/{apellido1Esposo}" +
+            "/{apellido2Esposo}/{nombre1Esposa}/{nombre2Esposa}/{apellido1Esposa}/{apellido2Esposa}")
+    public List<matrimonio> getMatrimonioPorEsposos(@PathVariable String nombre1Esposo,@PathVariable String nombre2Esposo,
+                                                  @PathVariable String apellido1Esposo, @PathVariable String apellido2Esposo,
+                                                  @PathVariable String nombre1Esposa,@PathVariable String nombre2Esposa,
+                                                  @PathVariable String apellido1Esposa, @PathVariable String apellido2Esposa){
+        return matrimonioService.getMatrimonioPorEsposos(nombre1Esposo, nombre2Esposo, apellido1Esposo, apellido2Esposo, nombre1Esposa, nombre2Esposa, apellido1Esposa, apellido2Esposa);
+    }
+
 }

@@ -41,7 +41,30 @@ public class matrimonio {
     private Boolean vigente;
     @Column(name = "apellido_casada")
     private String apellido_casada;
-
+    @Column(name = "nombre1Testigo1")
+    private String nombre1Testigo1;
+    @Column(name = "nombre2Testigo1")
+    private String nombre2Testigo1;
+    @Column(name = "apellido1Testigo1")
+    private String apellido1Testigo1;
+    @Column(name = "apellido2Testigo1")
+    private String apellido2Testigo1;
+    @Column(name = "nombre1Testigo2")
+    private String nombre1Testigo2;
+    @Column(name = "nombre2Testigo2")
+    private String nombre2Testigo2;
+    @Column(name = "apellido1Testigo2")
+    private String apellido1Testigo2;
+    @Column(name = "apellido2Testigo2")
+    private String apellido2Testigo2;
+    @Column(name = "nombre1Notario")
+    private String nombre1Notario;
+    @Column(name = "nombre2Notario")
+    private String nombre2Notario;
+    @Column(name = "apellido1Notario")
+    private String apellido1Notario;
+    @Column(name = "apellido2Notario")
+    private String apellido2Notario;
 
     public matrimonio() {
     }
@@ -204,6 +227,102 @@ public class matrimonio {
 
     public void setApellido_casada(String apellido_casada) {
         this.apellido_casada = apellido_casada;
+    }
+
+    public String getNombre1Testigo1() {
+        return nombre1Testigo1;
+    }
+
+    public void setNombre1Testigo1(String nombre1Testigo1) {
+        this.nombre1Testigo1 = nombre1Testigo1;
+    }
+
+    public String getNombre2Testigo1() {
+        return nombre2Testigo1;
+    }
+
+    public void setNombre2Testigo1(String nombre2Testigo1) {
+        this.nombre2Testigo1 = nombre2Testigo1;
+    }
+
+    public String getApellido1Testigo1() {
+        return apellido1Testigo1;
+    }
+
+    public void setApellido1Testigo1(String apellido1Testigo1) {
+        this.apellido1Testigo1 = apellido1Testigo1;
+    }
+
+    public String getApellido2Testigo1() {
+        return apellido2Testigo1;
+    }
+
+    public void setApellido2Testigo1(String apellido2Testigo1) {
+        this.apellido2Testigo1 = apellido2Testigo1;
+    }
+
+    public String getNombre1Testigo2() {
+        return nombre1Testigo2;
+    }
+
+    public void setNombre1Testigo2(String nombre1Testigo2) {
+        this.nombre1Testigo2 = nombre1Testigo2;
+    }
+
+    public String getNombre2Testigo2() {
+        return nombre2Testigo2;
+    }
+
+    public void setNombre2Testigo2(String nombre2Testigo2) {
+        this.nombre2Testigo2 = nombre2Testigo2;
+    }
+
+    public String getApellido1Testigo2() {
+        return apellido1Testigo2;
+    }
+
+    public void setApellido1Testigo2(String apellido1Testigo2) {
+        this.apellido1Testigo2 = apellido1Testigo2;
+    }
+
+    public String getApellido2Testigo2() {
+        return apellido2Testigo2;
+    }
+
+    public void setApellido2Testigo2(String apellido2Testigo2) {
+        this.apellido2Testigo2 = apellido2Testigo2;
+    }
+
+    public String getNombre1Notario() {
+        return nombre1Notario;
+    }
+
+    public void setNombre1Notario(String nombre1Notario) {
+        this.nombre1Notario = nombre1Notario;
+    }
+
+    public String getNombre2Notario() {
+        return nombre2Notario;
+    }
+
+    public void setNombre2Notario(String nombre2Notario) {
+        this.nombre2Notario = nombre2Notario;
+    }
+
+    public String getApellido1Notario() {
+        return apellido1Notario;
+    }
+
+    public void setApellido1Notario(String apellido1Notario) {
+        this.apellido1Notario = apellido1Notario;
+    }
+
+    public String getApellido2Notario() {
+        return apellido2Notario;
+    }
+
+    public void setApellido2Notario(String apellido2Notario) {
+        this.apellido2Notario = apellido2Notario;
     }
 }
 
