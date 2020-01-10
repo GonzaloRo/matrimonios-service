@@ -50,12 +50,12 @@ public class matrimonioService {
 
         for (int i=0; i<matrimonios.size(); i++){
             if( (primer_nombre.equals(matrimonios.get(i).getNombre1Esposa()) ||
-                    primer_nombre.equals(matrimonios.get(i).getNombre1Esposo())
-                    && segundo_nombre.equals(matrimonios.get(i).getNombre2Esposa()) ||
-                    segundo_nombre.equals(matrimonios.get(i).getNombre2Esposo()) &&
-                            primer_apellido.equals(matrimonios.get(i).getApellido1Esposa()) ||
-                    primer_apellido.equals(matrimonios.get(i).getApellido1Esposo()) &&
-                            segundo_apellido.equals(matrimonios.get(i).getApellido2Esposa()) ||
+                    primer_nombre.equals(matrimonios.get(i).getNombre1Esposo()))
+                    && (segundo_nombre.equals(matrimonios.get(i).getNombre2Esposa()) ||
+                    segundo_nombre.equals(matrimonios.get(i).getNombre2Esposo())) &&
+                    (primer_apellido.equals(matrimonios.get(i).getApellido1Esposa()) ||
+                    primer_apellido.equals(matrimonios.get(i).getApellido1Esposo())) &&
+                    (segundo_apellido.equals(matrimonios.get(i).getApellido2Esposa()) ||
                     segundo_apellido.equals(matrimonios.get(i).getApellido2Esposo()))){
                 matrimonioEncontrado.add(matrimonios.get(i));
             }
